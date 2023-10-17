@@ -1,5 +1,5 @@
 *{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Popins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,30 +26,41 @@ body{
 .header img{
     width: 99vw;
     height: 400px;
-    opacity: 80%;
+
 } 
 
 .aside1{
     grid-area: aside1;
-    background-color: rgb(251, 60, 60);
+    background-color: rgb(255, 255, 255);
     padding: 100px;
 }
 
 .main{
     grid-area: main;
-    background-color: rgb(5, 83, 192);
+    background-color: rgb(255, 255, 255);
     padding: 100px;
+    box-shadow: black;
+}
+p{
+    font-size: 20px;
+}
+
+.verde{
+    color: green;
+}
+.vermelho{
+    color: red;
 }
 
 .aside2{
     grid-area: aside2;
-    background-color: rgb(95, 63, 39);
+    background-color: rgba(255, 255, 255, 0.863);
     padding: 100px;
 }
 
 .footer{
     grid-area: footer;
-    background-color: rgb(124, 185, 136);
+    background-color: rgba(255, 0, 0, 0.466);
     padding: 100px;
 }
 
