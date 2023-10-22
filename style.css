@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
 *{
     font-family: 'Popins', sans-serif;
     margin: 0;
@@ -13,54 +14,135 @@ body{
     "aside1 main aside2"
     "footer footer footer";
     grid-template-columns: 2fr 6fr 2fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 500px auto auto;
 }
+/* body de todas as paginas */
 
+/* inicio do header */
 .header{
     grid-area: header;
-    background-color: rgb(94, 133, 39);
+    background-color: rgb(255, 255, 255);
     padding: 2px;
-
+    z-index: 100;
 }
-
-.header img{
-    width: 99vw;
-    height: 400px;
+/* imagem do header */
+.header img{ 
+    width: 100%;
+    height: 100%;
+    box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.371); 
 
 } 
+/* fim do header */
 
+/* aside primeiro */
 .aside1{
     grid-area: aside1;
     background-color: rgb(255, 255, 255);
     padding: 100px;
 }
 
+/* parte principal da pagina, main */
 .main{
     grid-area: main;
     background-color: rgb(255, 255, 255);
-    padding: 100px;
-    box-shadow: black;
+    padding: 50px;
+    
 }
-p{
-    font-size: 20px;
+/* primeira imagem do main */
+.main img{
+    width: 700px;
+}
+/* paragrafo do main */
+.main p{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify; /*alinhar em ambos os lados*/
+    position: inherit; /*serve para compactar os textos*/
+}
+/* paragrafo das formulas e as imagens */
+.formula{
+    text-align: center;
+}
+.formula p{
+    text-align: center;
+}
+.formula img{
+    width: 100px;
+}
+/* imagens dinamicas sobre as leis e as imagens com links para outras paginas*/
+.divimagemdinamica{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.divimagemdinamica img{
+    width: 350px;
+    margin: 50px;
+}
+.divterceiralei img{
+    width: 400px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav img{
+    width: 300px;
+    margin: 30px;
+    
+}
+.moduloaceleracao img{
+    width: 100px;
+}
+.aceleracaodelta img{
+    width: 200px;
+}
+.forcaresultante img{
+    width: 200px;
+}
+/* fim das imagens dinamicas */
+.main, .elementomae{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: red solid 2px;
+}
+.main, .elementomae p{
+    text-align: center;
+}
+.elementomae{
+    padding: 1px;
+}
+.calculadorasoma{
+    border: black solid 2px;
+    padding: 5px;
+    background-color: rgb(94, 150, 240);
+    width: 250px;
+    height: 300px;
 }
 
+/* segundo aside */
+.aside2{
+    grid-area: aside2;
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+}
+
+/* footer de todas as paginas */
+.footer{
+    grid-area: footer;
+    background-color: rgb(124, 185, 136);
+    padding: 100px;
+}
+
+/* cor das respostas na pagina de exercicios */
 .verde{
     color: green;
 }
 .vermelho{
     color: red;
 }
-
-.aside2{
-    grid-area: aside2;
-    background-color: rgba(255, 255, 255, 0.863);
-    padding: 100px;
-}
-
-.footer{
-    grid-area: footer;
-    background-color: rgba(255, 0, 0, 0.466);
-    padding: 100px;
-}
-
+/* fim das cores das respostas */

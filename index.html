@@ -3,30 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7df256cc46.js" crossorigin="anonymous"></script>
     <title>Leis de Newton</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="inclui_nome()">
+<body>
+
     <header class="header">
         <img src="img/foto1.png" alt="foto do header">
     </header>
-
+    
     <aside class="aside1">aside 1</aside>
 
     <main class="main">
-       <p>Olá <span id="marcacao_nome"></span>, nesta página iremos aprender sobre as Leis de Newton. Seja bem-vindo!</p><br>
-       <p>As Leis de Newton são os princípios fundamentais usados para analisar o movimento dos corpos. Juntas, elas formam a base da fundamentação da mecânica clássica.</p><br>
-       <p>As três leis de Newton foram publicadas pela primeira vez em 1687 por Isaac Newton (1643-1727) na obra de três volumes "Princípios Matemáticos da Filosofia Natural" (Philosophiae Naturalis Principia Mathematica).</p><br>
-       <p>Isaac Newton foi um dos mais importantes cientista da história, tendo deixado importantes contribuições, principalmente na física e na matemática.</p><br>
-       <h2>Primeira Lei de Newton</h2><br>
-       <p>A Primeira Lei de Newton é também chamada de "Lei da Inércia" ou "Princípio da Inércia". Inércia é a tendência dos corpos de permanecerem em repouso ou em movimento retilíneo uniforme (MRU).</p><br>
-       <p>Assim, para um corpo sair do seu estado de repouso ou de movimento retilíneo uniforme é necessário que uma força passe a atuar sobre ele.</p><br>
-       <p>Portanto, se a soma vetorial das forças for nula, resultará no equilíbrio das partículas. Por outro lado, se houver forças resultantes, produzirá variação na sua velocidade.</p><br>
-       <p>Quanto maior for a massa de um corpo, maior será sua inércia, ou seja, maior será sua tendência de permanecer em repouso ou em movimento retilíneo uniforme.</p><br>
-       <p>Para exemplificar, pensemos num ônibus em que o motorista, que está numa determinada velocidade, se depara com um cão e rapidamente, freia o veículo.</p><br>
-       <p>Nesta situação, a tendência dos passageiros é continuar o movimento, ou seja eles são jogados para frente.</p><br>
-    </main>
+        <p>Olá <span id="marcacao_nome"></span>, nesta página iremos aprender sobre as Leis de Newton. Seja bem-vindo!</p><br>
+        <h1>Introdução as Leis de Newton</h1><br>
+        <p>As leis de Newton fundamentam a base da Mecânica Clássica. São um conjunto de três leis capazes de explicar a dinâmica que envolve o movimento dos corpos. Essas leis foram publicadas pela primeira vez pelo físico inglês Isaac Newton, no ano de 1687, em sua obra de três volumes intitulada Princípios Matemáticos da Filosofia Natural.</p><br>
+        <p>Um dos principais legados deixados por Isaac Newton foi a precisa explicação matemática para o movimento dos corpos. A Mecânica Newtoniana mostrou-se capaz de predizer a trajetória de asteroides e o surgimento das marés, tornando-se um dos marcos da Física por trazer equações matemáticas para a explicação de fenômenos naturais.</p><br>
+        <p>Juntas, as três leis de Newton são usadas para descrever a dinâmica dos corpos, isto é, as causas que podem alterar seu estado de movimento. Em termos simples, as leis de Newton tratam de situações em que os corpos permanecem ou não em equilíbrio. Quando um corpo está sujeito a inúmeras forças que se cancelam, dizemos que ele encontra-se em equilíbrio estático ou dinâmico, ou seja, perfeitamente parado ou se movendo com velocidade constante e em linha reta.</p><br>
+        <p>O agente responsável pela mudança no estado de movimento dos corpos é chamado de força, uma grandeza vetorial cuja unidade é o kg.m/s² e que foi batizada, posteriormente, como N (Newton). Quando um corpo está sujeito a uma resultante não nula (diferente de zero) de forças, ele adquire uma aceleração (variação de velocidade). Essa aceleração, por sua vez, é inversamente proporcional à sua massa, ou seja, quanto maior for a massa, menor será a aceleração adquirida pelo corpo. De acordo com as leis de Newton, a massa é uma medida da inércia do corpo, ou seja, da tendência que um corpo tem de permanecer em seu atual estado de equilíbrio estático ou dinâmico.</p><br>
+        <h1>Primeira Lei de Newton</h1><br>
+        <p>A Primeira Lei de Newton é chamada de Lei da Inércia. Seu enunciado original encontra-se traduzido abaixo:</p><br>
+        <p>“Todo corpo continua em seu estado de repouso ou de movimento uniforme em uma linha reta, a menos que seja forçado a mudar aquele estado por forças aplicadas sobre ele.”</p><br>
+        <p>Essa lei diz que, ao menos que haja alguma força resultante não nula sobre um corpo, esse deverá manter-se em repouso ou se mover ao longo de uma linha reta com velocidade constante. A Lei de Inércia também explica o surgimento das forças inerciais, isto é, as forças que surgem quando os corpos estão sujeitos a alguma força capaz de produzir neles uma aceleração. Por exemplo: ao pisar no acelerador do carro, um motorista pode sentir-se comprimido em seu banco, como se houvesse uma força puxando-o para trás. Na verdade, o que ele sente é a expressão de sua inércia, ou seja, a tendência que seu corpo tem de permanecer parado ou em velocidade constante.</p><br>
+        <p>Além disso, quanto maior for a massa de um corpo, maior será sua inércia. Assim, alterar o estado de movimento de um corpo de massa grande requer a aplicação de uma força maior. Corpos de massa pequena têm seu estado de movimento alterado facilmente com a aplicação de forças menos intensas.</p><br>
+        <center>
+            <a onmouseover="mudar('lampada', 'img/foto5.png')"
+            onmouseout="mudar('lampada', 'img/foto4.png')">
+            <img src="img/foto4.png" id="lampada"></a><br>
+        </center>
+        <p>A Primeira Lei de Newton é pouco intuitiva: ao rolarmos uma bola no chão, ela para diante de nossos olhos. Jamais esperaríamos que ela rolasse eternamente. No caso descrito, porém, a bola está sujeita a uma força resultante que não é nula: há uma força de atrito entre a bola e a superfície do chão, desacelerando o objeto continuamente.</p><br>
+        <h1>Segunda Lei de Newton</h1><br>
+        <p>A Segunda Lei de Newton, também conhecida como Lei da Superposição de Forças ou como Princípio Fundamental da Dinâmica, traduzida de sua forma original, é apresentada abaixo:</p><br>
+        <p>“A mudança de movimento é proporcional à força motora imprimida e é produzida na direção de linha reta na qual aquela força é aplicada.”</p><br>
+        <p>Essa lei informa que o módulo da aceleração produzida sobre um corpo é diretamente proporcional ao módulo da força aplicada sobre ele e inversamente proporcional à sua massa. Essa lei é apresentada na equação abaixo:</p><br><br>
+        <div class="formula">
+            <img src="img/foto2.jpeg" alt="formula"><br><br>
+            <p>Legenda:</p>
+            <p>|a| – módulo da aceleração (m/s²)</p>
+            <p>|F| - módulo da força (N ou kg.m/s²)</p> 
+            <p>m – massa do corpo (kg)</p>
+        </div><br><br>
+        <p>As forças são grandezas vetoriais, portanto, são escritas com uma seta apontada sempre para direita acima de seu símbolo. Essa seta não indica o módulo ou a direção da grandeza vetorial, indica somente que elas são vetoriais. De acordo com a Segunda Lei de Newton, a força resultante aplicada sobre um corpo produz nele uma aceleração na mesma direção e sentido da força resultante:</p><br>
+        <div class="formula">
+            <img src="img/foto3.webp" alt="formula"><br><br>
+            <p>Legenda:</p>
+            <p>Fr – Força resultante (N ou kg.m/s²)</p>
+            <p>m – massa do corpo (kg)</p>
+            <p>a – aceleração (m/s²)</p> 
+        </div>
+        <div class="divimagemdinamica">
+            <a onmouseover="outro('lampada2', 'img/foto7.png')"
+            onmouseout="outro('lampada2', 'img/foto6.png')">
+                <img src="img/foto6.png" id="lampada2"></a><br>
+            <a onmouseover="trocar('lampada3', 'img/foto9.png')"
+            onmouseout="trocar('lampada3', 'img/foto8.png')">
+                <img src="img/foto8.png" id="lampada3"></a><br>
+        </div>
+        <p>Ao aplicar uma força à um objeto, quanto menor a massa, maior será a aceleração obtida. Aplicando a mesma força ao carrinho vazio e ao carrinho cheio resultará em acelerações visivelmente diferentes.</p><br>
+        <h1>Terceira Lei de Newton</h1><br>
+        <p>A Terceira Lei de Newton recebe o nome de Lei da Ação e Reação. Essa lei diz que todas as forças surgem aos pares: ao aplicarmos uma força sobre um corpo (ação), recebemos desse corpo a mesma força (reação), com mesmo módulo e na mesma direção, porém com sentido oposto. O enunciado original da Terceira Lei de Newton encontra-se traduzido abaixo:</p><br>
+        <p>“A toda ação há sempre uma reação oposta e de igual intensidade: as ações mútuas de dois corpos um sobre o outro são sempre iguais e dirigidas em sentidos opostos.”</p><br>
+        <p>Essa lei permite-nos entender que, para que surja uma força, é necessário que dois corpos interajam, produzindo forças de ação e reação. Além disso, é impossível que um par de ação e reação forme-se no mesmo corpo.</p><br>
+        <p>Outra informação contida no enunciado da Terceira Lei de Newton indica que os pares de ação e reação têm a mesma intensidade, mesma direção, porém sentidos opostos. Assim, se produzirmos uma força direcionada para baixo sobre um corpo, receberemos dele uma força de reação direcionada para cima. Por exemplo: se estivermos usando patins e empurrarmos um carrinho de supermercado lotado de compras, seremos empurrados para trás, em decorrência da fraca intensidade da força de atrito entre as rodas dos patins e o piso.</p><br>
+        <center><img src="img/foto10.png" alt="foto da teceira lei"></center><br>
+        <p>Observe a figura abaixo. Nela temos a força que o corpo 1 faz no corpo 2 (F1,2). Ela é equivalente, em módulo, à força que o corpo 2 faz sobre o corpo 1 (F2,1), no entanto, com sentido contrário. Por isso, adotamos o sinal negativo:</p><br>
+        <div class="divterceiralei">
+            <center><img src="img/foto11.webp" alt="foto da teceira lei"></center><br><br>
+        </div>
+        <div class="nav">
+            <a href="calculos.html"><img src="img/foto13.png" alt="Exercícios"></a>
+            <a href="calculadora.html"><img src="img/foto12.png" alt="calculadora"></a>
+        </div>
+        
+     </main>
 
     <aside class="aside2">aside 2</aside>
 

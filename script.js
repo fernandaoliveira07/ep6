@@ -59,3 +59,67 @@ function funcao_resposta(){
     }
 
 }
+
+function josefa(){
+    fernanda.value = parseInt(aram1.value) + parseInt(aram2.value);
+}
+function diminuir(){
+    fernanda.value = parseInt(aram1.value) - parseInt(aram2.value);
+}
+function multiplicacao(){
+    fernanda.value = parseInt(aram1.value) * parseInt(aram2.value);
+}
+function divisao(){
+    if(aram2.value == 0){
+        alert("Não é possível dividir por zero.");
+        aram1.value = 0;
+    }
+    else{
+        fernanda.value = parseInt(aram1.value) / parseInt(aram2.value);
+    }
+}
+
+function calcular(){
+    if(massa.value == 0){
+        alert("Não é possível dividir por zero.");
+        forca.value = 0;
+    }
+    else{
+        aceleracao.value = parseInt(forca.value) / parseInt(massa.value);
+    }
+    
+}
+
+function variacaov(){
+    deltavelocidade.value = parseInt(deltav.value) - parseInt(deltav2.value);
+}
+function variacaot(){
+    deltatempo.value = parseInt(deltat.value) - parseInt(deltat2.value);
+}
+function calcularaceleracao(){
+    if(deltataceleracao.value == 0){
+        alert("Não é possível dividir por zero.");
+        deltavaceleracao.value = 0;
+    }
+    else{
+        aceleracaodeltavt.value = parseInt(deltavaceleracao.value) / parseInt(deltataceleracao.value);
+    }
+}
+
+function forcar(){
+    forcaresultante.value = parseInt(massadafr.value) * parseInt(aceleracaodafr.value);
+}
+
+function mudar (objeto, imagem){
+    lampada.src = imagem;
+}
+
+function outro (objeto, imagem){
+    lampada2.src = imagem;
+}
+
+function trocar (objeto, imagem){
+    lampada3.src = imagem;
+}
+
+
