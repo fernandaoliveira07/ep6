@@ -70,7 +70,15 @@ form{
     color: black;
     border: #78bcfc solid 2px;
     border-radius: 7px;
-
+    
+}
+#main3{
+    background-color: #90c9ff6f;
+    border: #78bcfc solid 2px;
+    border-radius: 7px;
+}
+.main form{
+    text-align: left;
 }
 /* paragrafo das formulas e as imagens */
 .formula{
@@ -135,7 +143,7 @@ form{
 .calculadorasoma{
     padding: 5px;
     border: solid rgba(0, 0, 0, 0.547) 2px;
-    background-color: #70baffec;
+    background-color: #86c2fbec;
     border-radius: 5px;
 }
 
@@ -180,3 +188,19 @@ form{
     color: red;
 }
 /* fim das cores das respostas */
+
+/* pagina leticia */
+.imagemleticia img{
+    width: 400px;
+}
+.botaoresponder{
+    text-align: center;
+}
+.botaoresponder button{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: #399fff;
+    background-color: white;
+    border: 1px solid #349dff;
+}
