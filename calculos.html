@@ -1,118 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><!-- Define o conjunto de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Exercícios</title>
-    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7df256cc46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"><!-- Conecta o arquivo CSS externo -->
+    <title>Exercícios</title><!-- Define o título da página -->
+    <script src="script.js"></script><!-- Conecta o arquivo JavaScript externo -->
 </head>
-<body>
-    <header class="header">
-        <img src="img/foto1.png" alt="foto do header">
+<body id="bodycalculos"><!-- Início do corpo da página com um identificador "bodyindex" -->
+    <header class="header"><!-- Cabeçalho da página -->
+        <img src="img/foto1.png" alt="foto do header"><!-- Exibe uma imagem no cabeçalho -->
     </header>
 
-    <aside class="aside1">
+    <aside class="aside1" id="asideex"><!-- Cria uma seção à esquerda da página com um identificador "aside1" e uma classe "aside1" -->
         <br><br>
+        <!-- links nas imagens para acessar outras paginas -->
         <p>Acesse as outras páginas aqui:</p><br><br>
-        <a href="calculadora.html"><img src="img/foto12.png" alt="Exercícios"></a><br><br>
+        <a href="calculadora.html"><img src="img/foto12.png" alt="Exercícios"></a><br><br> 
         <a href="index.html"><img src="img/foto16.png" alt="calculadora"></a>
     </aside>
 
-    <main class="main" id="main3">
+    <main class="main" id="main3"><!-- Seção principal da página com um identificador "main3" e uma classe "main" -->
         <form>
+            <!-- Pergunta 1 -->
             <h3>1- (Cefet-MG) Um veículo segue em uma estrada horizontal e retilínea e o seu velocímetro registra um valor constante. Referindo-se a essa situação, assinale (V) para as afirmativas verdadeiras ou (F) para as falsas.</h3>
                 <br>
-            <P>( ) A aceleração do veículo é nula.
+            <p>( ) A aceleração do veículo é nula.
                 <br>
                 ( ) A resultante das forças que atuam sobre o veículo é nula.
                 <br>
                 ( ) A força resultante que atua sobre o veículo tem o mesmo sentido do vetor velocidade.</P>
                 <br>
-            <input type="radio" name="quest_1" value="errada"> A. V F F.<br>
-            <input type="radio" name="quest_1" value="errada"> B. F V F.<br>
-            <input type="radio" name="quest_1" value="correta"> C. V V F.<br>
-            <input type="radio" name="quest_1" value="errada"> D. V F V.<br>
+            <!-- Opções de resposta para a Pergunta 1 -->
+            <p><input type="radio" name="quest_1" value="errada"> a. V F F.</p><br>
+            <p><input type="radio" name="quest_1" value="errada"> b. F V F.</p><br>
+            <p><input type="radio" name="quest_1" value="correta"> c. V V F.</p><br>
+            <p><input type="radio" name="quest_1" value="errada"> d. V F V.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
             <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br><br>
-
+            <!-- pergunta 2  -->
             <h3>2- Um corpo de 2 kg desliza ao longo de um plano inclinado em um ângulo de 60º com relação à superfície horizontal, sob a influência da gravidade. Sabendo que o corpo desliza com velocidade constante, o módulo da força resultante sobre esse corpo é igual a:</h3>
-                <br>
-            <input type="radio" name="quest_2" value="errada"> A. 200 N.<br>
-            <input type="radio" name="quest_2" value="correta"> B. 0 N.<br>
-            <input type="radio" name="quest_2" value="errada"> C. 50 N.<br>
-            <input type="radio" name="quest_2" value="errada"> D. 100 N.<br>
+            <br>
+            <!-- opcoes de respostas para a pergunta 2 -->
+            <p><input type="radio" name="quest_2" value="errada"> a. 200 N.</p><br>
+            <p><input type="radio" name="quest_2" value="correta"> b. 0 N.</p><br>
+            <p><input type="radio" name="quest_2" value="errada"> c. 50 N.</p><br>
+            <p><input type="radio" name="quest_2" value="errada"> d. 100 N.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
             <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p><br><br>
-
-            <h3>3- (Unicastelo-SP)</h3><br>
-            <div class="imagemleticia">
-               <img src="img/ex1.webp" alt="tirinha"> 
-            </div>
+            <!-- pergunta 3 -->
+            <h3>3- (Unicastelo-SP)</h3>
+            <br>
+            <!-- imagem da pergunta -->
+            <div class="imagemleticia"><img src="img/ex1.webp" alt="tirinha"></div>
             <br>
             <h3>Assinale a alternativa que contém um exemplo de aplicação da Primeira Lei de Newton.</h3>
             <br>
-            <input type="radio" name="quest_3" value="correta"> A. Um livro apoiado sobre uma mesa horizontal é empurrado horizontalmente para a direita com uma força de mesma intensidade da força de atrito que atua sobre ele, mantendo-o em movimento retilíneo e uniforme.<br>
-            <input type="radio" name="quest_3" value="errada"> B. Quando um tenista acerta uma bola com sua raquete, exerce nela uma força de mesma direção e intensidade da que a bola exerce na raquete, mas de sentido oposto.<br>
-            <input type="radio" name="quest_3" value="errada"> C. Em uma colisão entre duas bolas de bilhar, a quantidade de movimento do sistema formado por elas imediatamente depois da colisão é igual à quantidade de movimento do sistema imediatamente antes da colisão.<br>
-            <input type="radio" name="quest_3" value="errada"> D. Em um sistema de corpos onde forças não conservativas não realizam trabalho, só pode ocorrer transformação de energia potencial em cinética ou de energia cinética em potencial.<br>
-            <input type="radio" name="quest_3" value="errada"> E. Se a força resultante que atua sobre um carrinho de supermercado enquanto ele se move tiver sua intensidade dobrada, a aceleração imposta a ele também terá sua intensidade dobrada.<br>
+            <!-- Opções de resposta para a Pergunta -->
+            <p><input type="radio" name="quest_3" value="correta"> a. Um livro apoiado sobre uma mesa horizontal é empurrado horizontalmente para a direita com uma força de mesma intensidade da força de atrito que atua sobre ele, mantendo-o em movimento retilíneo e uniforme.</p><br>
+            <p><input type="radio" name="quest_3" value="errada"> b. Quando um tenista acerta uma bola com sua raquete, exerce nela uma força de mesma direção e intensidade da que a bola exerce na raquete, mas de sentido oposto.</p><br>
+            <p><input type="radio" name="quest_3" value="errada"> c. Em uma colisão entre duas bolas de bilhar, a quantidade de movimento do sistema formado por elas imediatamente depois da colisão é igual à quantidade de movimento do sistema imediatamente antes da colisão.</p><br>
+            <p><input type="radio" name="quest_3" value="errada"> d. Em um sistema de corpos onde forças não conservativas não realizam trabalho, só pode ocorrer transformação de energia potencial em cinética ou de energia cinética em potencial.</p><br>
+            <p><input type="radio" name="quest_3" value="errada"> e. Se a força resultante que atua sobre um carrinho de supermercado enquanto ele se move tiver sua intensidade dobrada, a aceleração imposta a ele também terá sua intensidade dobrada.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
             <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br><br>
-
+            <!-- pergunta 4 -->
             <h3>4- Duas forças perpendiculares, de 6 N e 8N, são aplicadas a um corpo de massa igual a 20 kg. Determine o módulo da aceleração sofrida por esse corpo considerando que não haja quaisquer outras forças atuando sobre ele.</h3>
-                <br>
-            <input type="radio" name="quest_3" value="correta"> A. 10 N.<br>
-            <input type="radio" name="quest_3" value="errada"> B. 6 N.<br>
-            <input type="radio" name="quest_3" value="errada"> C. 20 N.<br>
-            <input type="radio" name="quest_3" value="errada"> D. 36 N.<br>
-            <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br><br>
-
-            <h3>5- Um veículo de massa de 800 kg entra em uma curva de raio igual a 200 m, com uma velocidade de 72 km/h. Determine o módulo da força centrípeta produzida pelo contato dos pneus do veículo com o solo.</h3>
-                <br>
-            <input type="radio" name="quest_4" value="errada"> A. 24000 N.<br>
-            <input type="radio" name="quest_4" value="errada"> B. 3200 N. <br>
-            <input type="radio" name="quest_4" value="correta"> C. 1600 N.<br>
-            <input type="radio" name="quest_4" value="errada"> D. 1200 N.<br>
-            <input type="radio" name="quest_4" value="errada"> E. 800 N.<br>
+            <br>
+            <!-- Opções de resposta para a Pergunta -->
+            <p><input type="radio" name="quest_4" value="correta"> a. 10 N.</p><br>
+            <p><input type="radio" name="quest_4" value="errada"> b. 6 N.</p><br>
+            <p><input type="radio" name="quest_4" value="errada"> c. 20 N.</p><br>
+            <p><input type="radio" name="quest_4" value="errada"> d. 36 N.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
             <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p><br><br>
-
+            <!-- pergunta 5 -->
+            <h3>5- Um ônibus com passageiros viaja em trajetória retilínea. Ao se deparar com uma vaca que cruza repentinamente a estrada, o motorista freia bruscamente e as pessoas são "lançadas para frente". O que acontece é que as pessoas continuam em movimento em relação ao ônibus, agora parado. Este fenômeno acontece porque</h3>
+            <br>
+            <!-- Opções de resposta para a Pergunta -->
+            <p><input type="radio" name="quest_5" value="errada"> a. elas têm uma força resultante não nula que as impulsiona para frente.</p><br>
+            <p><input type="radio" name="quest_5" value="errada"> b. elas têm uma força de inércia que as mantém em movimento retilíneo uniforme.</p><br>
+            <p><input type="radio" name="quest_5" value="errada"> c. elas têm uma força de atrito com o ar que as empurra para frente.</p><br>
+            <p><input type="radio" name="quest_5" value="errada"> d. elas têm uma força de reação do ônibus que as lança para frente.</p><br>
+            <p><input type="radio" name="quest_5" value="correta"> e. elas têm uma tendência natural de resistir à mudança do seu estado de movimento devido à inércia.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
+            <p id="resp_correta_5" class="verde"></p><p id="resp_errada_5" class="vermelho"></p><br><br>
+            <!-- pergunta 6 -->
             <h3>6- Marque a alternativa correta a respeito da Terceira lei de Newton.</h3>
             <br>
-            <input type="radio" name="quest_1" value="errada"> A. A força normal é a reação da força peso.<br>
-            <input type="radio" name="quest_1" value="errada"> B. Ação e reação são pares de forças com sentidos iguais e direções opostas.<br>
-            <input type="radio" name="quest_1" value="errada"> C. A força de ação é sempre maior que a reação.<br>
-            <input type="radio" name="quest_1" value="errada"> D. Toda ação corresponde a uma reação de mesma intensidade e sentido.<br>
-            <input type="radio" name="quest_1" value="correta"> E. Toda ação corresponde a uma reação de mesma intensidade, mas sentido oposto.<br>
-            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br><br>
-
-            <h3>7- Na Terra, onde a aceleração da gravidade é igual a 9,8 m/s², um corpo pesa 196 N. Na Lua, onde a gravidade é de aproximadamente 1,6 m/s², o peso desse corpo será de:</h3>
+            <!-- Opções de resposta para a Pergunta -->
+            <p><input type="radio" name="quest_6" value="errada"> a. A força normal é a reação da força peso.</p><br>
+            <p><input type="radio" name="quest_6" value="errada"> b. Ação e reação são pares de forças com sentidos iguais e direções opostas.</p><br>
+            <p><input type="radio" name="quest_6" value="errada"> c. A força de ação é sempre maior que a reação.</p><br>
+            <p><input type="radio" name="quest_6" value="errada"> d. Toda ação corresponde a uma reação de mesma intensidade e sentido.</p><br>
+            <p><input type="radio" name="quest_6" value="correta"> e. Toda ação corresponde a uma reação de mesma intensidade, mas sentido oposto.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
+            <p id="resp_correta_6" class="verde"></p><p id="resp_errada_6" class="vermelho"></p><br><br>
+            <!-- pergunta 7 -->
+            <h3>7- O peso de um objeto na lua é de 48 N. Determine o peso desse objeto na Terra.</h3>
+            <h3>Dados: Gravidade da Terra = 10 m/s2; Gravidade da lua = 1,6 m/s2.</h3>
             <br>
-            <input type="radio" name="quest_2" value="errada"> A. 360 N.<br>
-            <input type="radio" name="quest_2" value="correta"> B. 320 N.<br>
-            <input type="radio" name="quest_2" value="errada"> C. 720 N.<br>
-            <input type="radio" name="quest_2" value="errada"> D. 32 N.<br>
-            <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p><br><br>
-
+            <!-- Opções de resposta para a Pergunta -->
+            <p><input type="radio" name="quest_7" value="errada"> a. 350 N.</p><br>
+            <p><input type="radio" name="quest_7" value="correta"> b. 300 N.</p><br>
+            <p><input type="radio" name="quest_7" value="errada"> c. 200 N.</p><br>
+            <p><input type="radio" name="quest_7" value="errada"> d. 150 N.</p><br>
+            <p><input type="radio" name="quest_7" value="errada"> e. 50 N.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
+            <p id="resp_correta_7" class="verde"></p><p id="resp_errada_7" class="vermelho"></p><br><br>
+            <!-- pergunta 8 -->
             <h3>8- Uma força de magnitude F é aplicada a um corpo 1 de massa M1. Aplicando-se essa mesma força em um corpo de massa M1/4, é esperado que esse segundo corpo desenvolva uma aceleração:</h3>
             <br>
-            <input type="radio" name="quest_3" value="correta"> A. quatro vezes maior que a aceleração desenvolvida pelo corpo 1.<br>
-            <input type="radio" name="quest_3" value="errada"> B. oito vezes menor que a aceleração desenvolvida pelo corpo 1.<br>
-            <input type="radio" name="quest_3" value="errada"> C. igual à aceleração desenvolvida pelo corpo 1.<br>
-            <input type="radio" name="quest_3" value="errada"> D. quatro vezes menor que a aceleração desenvolvida pelo corpo 1.<br>
-            <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br><br>
-
+            <!-- Opções de resposta para a Pergunta -->
+            <p><input type="radio" name="quest_8" value="correta"> a. quatro vezes maior que a aceleração desenvolvida pelo corpo 1.</p><br>
+            <p><input type="radio" name="quest_8" value="errada"> b. oito vezes menor que a aceleração desenvolvida pelo corpo 1.</p><br>
+            <p><input type="radio" name="quest_8" value="errada"> c. igual à aceleração desenvolvida pelo corpo 1.</p><br>
+            <p><input type="radio" name="quest_8" value="errada"> d. quatro vezes menor que a aceleração desenvolvida pelo corpo 1.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
+            <p id="resp_correta_8" class="verde"></p><p id="resp_errada_8" class="vermelho"></p><br><br>
+            <!-- pergunta 9 -->
             <h3>9- Os automóveis modernos são equipados com sistemas de segurança mais eficientes, capazes de proteger melhor os passageiros em colisões e acidentes de trânsito. Um desses avanços diz respeito à utilização de para-choques construídos em materiais dobráveis, em vez de para-choques metálicos, como os utilizados antigamente. O uso dos novos materiais nos para-choques para tal fim se justifica pelo fato de:</h3>
             <br>
-            <input type="radio" name="quest_1" value="correta"> A. diminuírem a aceleração produzida pelo veículo.<br>
-            <input type="radio" name="quest_1" value="errada"> B. diminuírem a massa do veículo.<br>
-            <input type="radio" name="quest_1" value="errada"> C. diminuírem a aceleração sofrida pelos passageiros durante uma colisão.<br>
-            <input type="radio" name="quest_1" value="errada"> D. diminuírem o consumo de combustível.<br>
-            <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br><br>
-
+            <!-- Opções de resposta para a Pergunta -->
+            <p><input type="radio" name="quest_9" value="correta"> a. diminuírem a aceleração produzida pelo veículo.</p><br>
+            <p><input type="radio" name="quest_9" value="errada"> b. diminuírem a massa do veículo.</p><br>
+            <p><input type="radio" name="quest_9" value="errada"> c. diminuírem a aceleração sofrida pelos passageiros durante uma colisão.</p><br>
+            <p><input type="radio" name="quest_9" value="errada"> d. diminuírem o consumo de combustível.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
+            <p id="resp_correta_9" class="verde"></p><p id="resp_errada_9" class="vermelho"></p><br><br>
+            <!-- pergunta 10 -->
             <h3>10- (UFTM) Após a cobrança de uma falta, num jogo de futebol, a bola chutada acerta violentamente o rosto de um zagueiro. A foto mostra o instante em que a bola encontra-se muito deformada devido às forças trocadas entre ela e o rosto do jogador.</h3>
             <br>
-            <div class="imagemleticia">
-               <img src="img/ex2.webp" alt="tirinha"> 
-            </div>
+            <!-- imagem da pergunta -->
+            <div class="imagemleticia"><img src="img/ex2.webp"></div>
             <br>
+            <!-- paragrafos -->
             <h3>A respeito dessa situação, são feitas as seguintes afirmações:</h3>
             <br>
             <p>I. A força aplicada pela bola no rosto e a força aplicada pelo rosto na bola têm direções iguais, sentidos opostos e intensidades iguais, porém, não se anulam.</p>
@@ -124,23 +147,49 @@
             <p>IV. A força de reação aplicada pela bola no rosto é a força aplicada pela cabeça no pescoço do jogador, que surge como consequência do impacto.</p>
             <br>
             <h3>É correto o contido apenas em:</h3>
-            <input type="radio" name="quest_2" value="correta"> A. I.<br>
-            <input type="radio" name="quest_2" value="errada"> B. I e III.<br>
-            <input type="radio" name="quest_2" value="errada"> C. I e IV.<br>
-            <input type="radio" name="quest_2" value="errada"> D. II e IV.<br>
-            <input type="radio" name="quest_2" value="errada"> E. II, III e IV.<br>
-            <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p><br><br>
-
-                <div class="botaoresponder">
-                    <button type="button" onclick="funcao_resposta()">Responder</button>
-                </div>
+            <br>
+            <!-- Opções de resposta para a Pergunta -->
+            <p><input type="radio" name="quest_10" value="correta"> a. I.</p><br>
+            <p><input type="radio" name="quest_10" value="errada"> b. I e III.</p><br>
+            <p><input type="radio" name="quest_10" value="errada"> c. I e IV.</p><br>
+            <p><input type="radio" name="quest_10" value="errada"> d. II e IV.</p><br>
+            <p><input type="radio" name="quest_10" value="errada"> e. II, III e IV.</p><br>
+            <!-- Campos para exibir respostas corretas ou erradas (inicialmente vazios) -->
+            <p id="resp_correta_10" class="verde"></p><p id="resp_errada_10" class="vermelho"></p><br><br>
+            <!-- paragrafo que mostra quantidade de acertos -->
+            <p id="quantos_acertos"></p><br>
+            <!-- Botão para responder ao formulário -->
+            <div class="botaoresponder">
+               <button type="button" onclick="funcao_resposta()">Responder</button>
+            </div>
                 
         </form>
     </main>
 
-    <aside class="aside2"></aside>
+    <aside class="aside2"></aside><!-- Segunda seção à direita da página com um identificador "aside2" e uma classe "aside2" -->
 
-    <footer class="footer"></footer>
+    <footer class="footer"><!-- Rodapé da página -->
+        <div class="sociaisfooter">
+           <ul><!-- Links para redes sociais -->
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li><!-- Links para redes sociais -->
+            </ul> <br><br>
+        </div>
+        <div class="referencias"><!-- referencias e textos -->
+            <h3 class="h3ref">Referências</h3><br>
+            <p>HELERBROCK, Rafael. "Leis de Newton"; Brasil Escola. Disponível em: https://brasilescola.uol.com.br/fisica/leis-newton.htm. Acesso em: 20 de outubro de 2023.</p><br>
+            <p>MACHADO, Letícia Regina. "Leis de Newton"; Mundo Educação. Disponível em: https://exercicios.mundoeducacao.uol.com.br/exercicios-fisica/exercicios-sobre-as-leis-newton.htm. Acesso em: 22 de outubro de 2023.</p><br><br>
+            <h3>Autoras</h3><br><!-- autoras e emails -->
+            <p>Fernanda Barreto Oliveira</p><br>
+            <p>Email: fernanda.berreto.oliveira@escola.pr.gov.br</p><br><!-- paragrafos -->
+            <p>Letícia Regina Machado</p><br>
+            <p>Email: leticia.regina.machado@escola.pr.gov.br</p><br><br>
+            <h4>Estudar é como regar as sementes do jardim onde florescerá o seu futuro!</h4><!-- referencias e textos -->
+        </div>
+    </footer>
     
 </body>
 </html>

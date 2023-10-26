@@ -6,7 +6,7 @@
     box-sizing: border-box;
 } 
 /*resetar o css da pagina*/
-
+/* body geral */
 body{
     display: grid;
     grid-template-areas:
@@ -66,14 +66,15 @@ body{
 form{
     color: black;
 }
+/* main com id para diferenciar */
 #main2{
     color: black;
     border: #78bcfc solid 2px;
     border-radius: 7px;
-    
+    background-color: #ffffff;
 }
 #main3{
-    background-color: #90c9ff6f;
+    background-color: #90c9ff5b;
     border: #78bcfc solid 2px;
     border-radius: 7px;
 }
@@ -98,10 +99,12 @@ form{
     justify-content: center;
     
 }
+/* primeira imagem */
 .divimagemdinamica img{
     width: 350px;
     margin: 50px;
 }
+/* segunda imagem */
 .divterceiralei img{
     width: 400px;
 }
@@ -115,6 +118,7 @@ form{
     margin: 30px;
     
 }
+/* tamanho das imagens */
 .moduloaceleracao img{
     width: 100px;
 }
@@ -140,10 +144,11 @@ form{
     padding: 1px;
     background-color: white;
 }
+/* elemento filho */
 .calculadorasoma{
     padding: 5px;
-    border: solid rgba(0, 0, 0, 0.547) 2px;
-    background-color: #86c2fbec;
+    border: #5bb0ff solid 2px;
+    background-color: #7dbdf8cd;
     border-radius: 5px;
 }
 
@@ -156,6 +161,7 @@ form{
     background-color: white;
     border: 1px solid #349dff;
 }
+/* botao */
 .botaomaismenos input{
     width: 70px;
     height: 30px;
@@ -172,12 +178,43 @@ form{
     background-color: white;
     padding: 100px;
 }
-
+/* aside com id */
+#aside1{
+    background-color: #a5d2fd67;
+}
+#aside2{
+    background-color: #a5d2fd67;
+}
 /* footer de todas as paginas */
 .footer{
     grid-area: footer;
-    background-color: rgb(124, 185, 136);
+    background-color: #78bcfc;
     padding: 100px;
+}
+/* redes sociais do footer */
+.sociaisfooter ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+/* lista do footer */
+.sociaisfooter ul li{ 
+    text-decoration: none;
+    list-style: none;
+    margin: 20px;
+}
+.sociaisfooter ul li a i{
+    color: white;
+    font-size: 30px;
+}
+/* referencias e autoras do footer */
+.referencias{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: inherit; /*serve para compactar os textos*/
+    color: white;
 }
 
 /* cor das respostas na pagina de exercicios */
@@ -204,3 +241,106 @@ form{
     background-color: white;
     border: 1px solid #349dff;
 }
+/* pagina leticia */
+#main3{
+    padding: 30px;
+}
+form p{
+    font-size: 19px;
+}
+/* responsividade pra tablet */
+@media only screen and (max-width: 770px){
+    /* body com id */
+    #bodycalculadora{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "aside1"
+        "main"
+        "footer";
+        grid-template-columns: 12fr;
+        grid-template-rows: 300px auto auto auto;
+    }
+    #bodyindex{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 12fr;
+        grid-template-rows: 400px auto auto;
+    }
+    #bodycalculos{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "aside1"
+        "main"
+        "footer";
+        grid-template-columns: 12fr;
+        grid-template-rows: 300px auto auto auto;
+    }
+    /* aside com id */
+    #asideex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #asideex a{
+        margin: 10px;
+    }
+    #asideex p{
+        display: none;
+    }
+    .aside1{
+        display: none;
+    }
+    .aside2{
+        display: none;
+    }
+    /* imagem do header */
+    .header img{
+        width: 100%;
+        height: 80%;
+    }
+}
+/* respondividade para celular */
+@media only screen and (max-width: 300px){
+    /* body com id */
+    #bodycalculadora{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "aside1"
+        "main"
+        "footer";
+        grid-template-columns: 12fr;
+        grid-template-rows: 300px auto auto auto;
+    }
+    #bodyindex{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 12fr;
+        grid-template-rows: 400px auto auto;
+    }
+    #bodycalculos{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "aside1"
+        "main"
+        "footer";
+        grid-template-columns: 12fr;
+        grid-template-rows: 300px auto auto auto;
+    }
+    /* imagem do header */
+    .header img{
+        width: 100%;
+        height: 80%;
+    }
+}
+/* fim da responsividade */

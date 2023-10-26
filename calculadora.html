@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><!-- Define o conjunto de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7df256cc46.js" crossorigin="anonymous"></script>
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Calculadora</title><!-- Define o título da página -->
+    <link rel="stylesheet" href="style.css"><!-- Conecta o arquivo CSS externo -->
+    <script src="script.js"></script><!-- Conecta o arquivo JavaScript externo -->
 </head>
-<body>
+<body id="bodycalculadora"><!-- Início do corpo da página com um identificador "bodyindex" -->
 
-    <header class="header">
-        <img src="img/foto1.png" alt="foto do header">
+    <header class="header"><!-- Cabeçalho da página -->
+        <img src="img/foto1.png" alt="foto do header"><!-- Exibe uma imagem no cabeçalho -->
     </header>
     
-    <aside class="aside1">
+    <aside class="aside1" id="asideex"><!-- Cria uma seção à esquerda da página com um identificador "aside1" e uma classe "aside1" -->
         <br><br>
+        <!-- links nas imagens para acessar outras paginas -->
         <p>Acesse as outras páginas aqui:</p><br><br>
         <a href="calculos.html"><img src="img/foto13.png" alt="Exercícios"></a><br><br>
         <a href="index.html"><img src="img/foto16.png" alt="calculadora"></a>
     </aside>
 
-    <main class="main">
+    <main class="main"><!-- Seção principal da página com uma classe "main" -->
         <div class="elementomae">
-            <div class="calculadorasoma">
+            <div class="calculadorasoma"><!-- Primeira calculadora para soma e subtração -->
                 <h1>Calculadora</h1><br><br>
                  Valor 1 = <input type="number" id="aram1" value=""><br><br>
                  Valor 2 = <input type="number" id="aram2" value=""><br><br>
+                 <!-- Botões para operações -->
                  <div class="botaomaismenos">
-                    <input type="button" value="+" onclick="josefa()">
-                    <input type="button" value="-" onclick="diminuir()">
-                    <input type="button" value="x" onclick="multiplicacao()">
-                    <input type="button" value="÷" onclick="divisao()"><br><br>
+                    <input type="button" value="+" onclick="josefa()"><!-- Botão de soma -->
+                    <input type="button" value="-" onclick="diminuir()"><!-- Botão de subtração -->
+                    <input type="button" value="x" onclick="multiplicacao()"><!-- Botão de multiplicação -->
+                    <input type="button" value="÷" onclick="divisao()"><br><br><!-- Botão de divisão -->
                  </div>
                  Resultado = <input type="text" id="fernanda" value=""><br><br><br> 
              </div><br>
-             
+             <!-- Segunda calculadora para cálculo do módulo da aceleração -->
              <div class="calculadorasoma">
                 <h1>Cálculo do Módulo da Aceleração</h1><br><br>
                 <p>Fórmula: </p><br><br><div class="moduloaceleracao"><img src="img/foto2.png" alt="formula"><br><br></div><br><br>
                 |F| = <input type="number" id="forca" value=""><br><br>
                 m = <input type="number" id="massa" value=""><br><br>
-                <div class="botaocalcular">
+                <div class="botaocalcular"> <!-- Botão para calcular -->
                     <input type="button" value="Calcular" onclick="calcular()"><br><br>
                 </div>
                 |a| = <input type="text" id="aceleracao" value=""><br><br><br>
              </div><br>
-             
+              <!-- Terceira seção não contém cálculos, apenas informações -->
              <div class="calculadorasoma">
                 <h1>Cálculo da Aceleração</h1><br><br>
                 <p>Fórmula: </p><br><br><div class="aceleracaodelta"><img src="img/foto14.png" alt="formula"></div><br><br><br>
              </div><br>
              
-             <div class="calculadorasoma">
+             <div class="calculadorasoma"><!-- Quarta calculadora para cálculo da variação de velocidade -->
                 <h3>Cálculo da Variação da Velocidade</h3><br><br>
                 Vf = <input type="number" id="deltav" value=""><br><br>
                 Vi = <input type="number" id="deltav2" value=""><br><br>
@@ -61,34 +63,34 @@
                 </div>
                 ΔV = <input type="text" id="deltavelocidade" value=""><br><br><br>
              </div><br>
-             
+             <!-- Quinta calculadora para cálculo da variação do tempo -->
              <div class="calculadorasoma">
                 <h3>Cálculo da Variação do Tempo</h3><br><br>
                 Tf = <input type="number" id="deltat" value=""><br><br>
                 Ti = <input type="number" id="deltat2" value=""><br><br>
-                <div class="botaocalcular">
+                <div class="botaocalcular">  <!-- Botão para calcular -->
                     <input type="button" value="Calcular" onclick="variacaot()"><br><br>
                 </div>
                 ΔT = <input type="text" id="deltatempo" value=""><br><br><br>
              </div><br>
              
-             <div class="calculadorasoma">
+             <div class="calculadorasoma"><!-- Sexta calculadora para cálculo da aceleração com base em cálculos anteriores -->
                 <h2>Cálculo da Aceleração</h2><br><br>
                 <p>Preencha os campos de acordo com os cálculos anteriores:</p><br><br>
                 ΔV = <input type="number" id="deltavaceleracao" value="deltavelocidade"><br><br>
                 ΔT = <input type="number" id="deltataceleracao" value="deltatempo"><br><br>
-                <div class="botaocalcular">
+                <div class="botaocalcular"><!-- Botão para calcular -->
                     <input type="button" value="Calcular" onclick="calcularaceleracao()"><br><br>
                 </div>
                 a = <input type="text" id="aceleracaodeltavt" value=""><br><br><br> 
              </div><br>
-             
+             <!-- Sétima calculadora para cálculo da força resultante -->
              <div class="calculadorasoma">
                 <h1>Cálculo da Força Resultante</h1><br><br>
                 <p>Fórmula: </p><br><div class="forcaresultante"><img src="img/foto15.png" alt="formula"></div><br><br>
                 m = <input type="number" id="massadafr" value=""><br><br>
                 a = <input type="number" id="aceleracaodafr" value=""><br><br>
-                <div class="botaocalcular">
+                <div class="botaocalcular"><!-- Botão para calcular -->
                     <input type="button" value="Calcular" onclick="forcar()"><br><br>
                 </div>
                 F = <input type="text" id="forcaresultante" value=""><br><br><br>
@@ -98,8 +100,29 @@
         
      </main>
 
-    <aside class="aside2"></aside>
+    <aside class="aside2"></aside><!-- Segunda seção à direita da página com um identificador "aside2" e uma classe "aside2" -->
 
-    <footer class="footer"></footer>
+    <footer class="footer"><!-- Rodapé da página -->
+        <div class="sociaisfooter">
+           <ul><!-- Links para redes sociais -->
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li><!-- Links para redes sociais -->
+            </ul> <br><br>
+        </div>
+        <div class="referencias"><!-- referencias e textos -->
+            <h3 class="h3ref">Referências</h3><br>
+            <p>HELERBROCK, Rafael. "Leis de Newton"; Brasil Escola. Disponível em: https://brasilescola.uol.com.br/fisica/leis-newton.htm. Acesso em: 20 de outubro de 2023.</p><br>
+            <p>MACHADO, Letícia Regina. "Leis de Newton"; Mundo Educação. Disponível em: https://exercicios.mundoeducacao.uol.com.br/exercicios-fisica/exercicios-sobre-as-leis-newton.htm. Acesso em: 22 de outubro de 2023.</p><br><br>
+            <h3>Autoras</h3><br><!-- autoras e emails -->
+            <p>Fernanda Barreto Oliveira</p><br>
+            <p>Email: fernanda.berreto.oliveira@escola.pr.gov.br</p><br><!-- paragrafos -->
+            <p>Letícia Regina Machado</p><br>
+            <p>Email: leticia.regina.machado@escola.pr.gov.br</p><br><br>
+            <h4>Estudar é como regar as sementes do jardim onde florescerá o seu futuro!</h4><!-- referencias e textos -->
+        </div>
+    </footer>
 </body>
 </html>
