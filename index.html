@@ -1,113 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
-    <meta charset="UTF-8"><!-- Define o conjunto de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7df256cc46.js" crossorigin="anonymous"></script>
-    <title>Leis de Newton</title><!-- Define o título da página -->
-    <link rel="stylesheet" href="style.css"><!-- Conecta o arquivo CSS externo -->
-    <script src="script.js"></script><!-- Conecta o arquivo JavaScript externo -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cadastro Cliente</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
 </head>
-<body onload="inclui_nome()" id="bodyindex"><!-- Início do corpo da página com um identificador "bodyindex" -->
 
-    <header class="header"><!-- Cabeçalho da página -->
-        <img src="img/foto1.png" alt="foto do header"><!-- Exibe uma imagem no cabeçalho -->
-    </header>
-    
-    <aside class="aside1" id="aside1"></aside><!-- Cria uma seção à esquerda da página com um identificador "aside1" e uma classe "aside1" -->
+<body class="body_c">
+    <div class="container">
+        <h1>Cadastro do Cliente</h1>
+        <div class="form-group">
+            <label for="name_cl">Nome do cliente:</label>
+            <input type="text" id="name_cl" name="name" placeholder="Nome do cliente" required>
+        </div>
+        <div class="form-group">
+            <label for="email_cl">Email do cliente:</label>
+            <input type="text" id="email_cl" name="email" placeholder="Email do cliente" required>
+        </div>
+        <div class="form-group">
+            <label for="phone_cl">Número de telefone:</label>
+            <input type="text" id="phone_cl" name="phone" placeholder="(00) 00000-0000">
+        </div>
+        <div class="form-group">
+            <label for="phoneType_cl">Marcador:</label>
+            <select id="phoneType_cl" name="phoneType">
+                <option value="nenhum">Nenhum Marcador</option>
+                <option value="celular">Celular</option>
+                <option value="comercial">Comercial</option>
+                <option value="casa">Casa</option>
+                <option value="principal">Principal</option>
+                <option value="faxcomer">Fax comercial</option>
+                <option value="faxresi">Fax residencial</option>
+                <option value="pager">Pager</option>
+                <option value="outros">Outros</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="address_cl">Endereço do cliente:</label>
+            <input type="text" id="address_cl" name="address" placeholder="Endereço do cliente" required>
+        </div>
+        <div class="form-group">
+            <label for="Doc_cl">Documento:</label>
+            <input type="text" id="Doc_cl" name="Doc" placeholder="Digite seu documento" required>
+        </div>
+        <div class="form-group">
+            <label for="tp_doc_cl">Tipo de Documento:</label>
+            <select id="tp_doc_cl" name="tipodoc">
+                <option value="CPF">CPF</option>
+                <option value="Passaporte">Passaporte</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="codigo_cl">Código:</label>
+            <input type="text" id="codigo_cl" name="codigo" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="estado_cl">Estado:</label>
+            <input type="text" id="estado_cl" name="estado" placeholder="Estado">
+        </div>
+        <div class="form-group">
+            <label for="cidade_cl">Cidade:</label>
+            <input type="text" id="cidade_cl" name="cidade" placeholder="Cidade">
+        </div>
+        <div class="form-group">
+            <button type="submit" onclick="cadastro_cl()">Cadastrar</button>
+        </div>
 
-    <main class="main" id="main2"><!-- Seção principal da página com um identificador "main2" e uma classe "main" -->
-        <p>Olá <span id="marcacao_nome"></span>, nesta página iremos aprender sobre as Leis de Newton. Seja bem-vindo!</p><br>
-        <h1>Introdução as Leis de Newton</h1><br><!-- Título -->
-        <!-- Parágrafos explicativos sobre as Leis de Newton -->
-        <p>As leis de Newton fundamentam a base da Mecânica Clássica. São um conjunto de três leis capazes de explicar a dinâmica que envolve o movimento dos corpos. Essas leis foram publicadas pela primeira vez pelo físico inglês Isaac Newton, no ano de 1687, em sua obra de três volumes intitulada Princípios Matemáticos da Filosofia Natural.</p><br>
-        <p>Um dos principais legados deixados por Isaac Newton foi a precisa explicação matemática para o movimento dos corpos. A Mecânica Newtoniana mostrou-se capaz de predizer a trajetória de asteroides e o surgimento das marés, tornando-se um dos marcos da Física por trazer equações matemáticas para a explicação de fenômenos naturais.</p><br>
-        <p>Juntas, as três leis de Newton são usadas para descrever a dinâmica dos corpos, isto é, as causas que podem alterar seu estado de movimento. Em termos simples, as leis de Newton tratam de situações em que os corpos permanecem ou não em equilíbrio. Quando um corpo está sujeito a inúmeras forças que se cancelam, dizemos que ele encontra-se em equilíbrio estático ou dinâmico, ou seja, perfeitamente parado ou se movendo com velocidade constante e em linha reta.</p><br>
-        <p>O agente responsável pela mudança no estado de movimento dos corpos é chamado de força, uma grandeza vetorial cuja unidade é o kg.m/s² e que foi batizada, posteriormente, como N (Newton). Quando um corpo está sujeito a uma resultante não nula (diferente de zero) de forças, ele adquire uma aceleração (variação de velocidade). Essa aceleração, por sua vez, é inversamente proporcional à sua massa, ou seja, quanto maior for a massa, menor será a aceleração adquirida pelo corpo. De acordo com as leis de Newton, a massa é uma medida da inércia do corpo, ou seja, da tendência que um corpo tem de permanecer em seu atual estado de equilíbrio estático ou dinâmico.</p><br>
-        <h1>Primeira Lei de Newton</h1><br>
-        <p>A Primeira Lei de Newton é chamada de Lei da Inércia. Seu enunciado original encontra-se traduzido abaixo:</p><br>
-        <p>“Todo corpo continua em seu estado de repouso ou de movimento uniforme em uma linha reta, a menos que seja forçado a mudar aquele estado por forças aplicadas sobre ele.”</p><br>
-        <p>Essa lei diz que, ao menos que haja alguma força resultante não nula sobre um corpo, esse deverá manter-se em repouso ou se mover ao longo de uma linha reta com velocidade constante. A Lei de Inércia também explica o surgimento das forças inerciais, isto é, as forças que surgem quando os corpos estão sujeitos a alguma força capaz de produzir neles uma aceleração. Por exemplo: ao pisar no acelerador do carro, um motorista pode sentir-se comprimido em seu banco, como se houvesse uma força puxando-o para trás. Na verdade, o que ele sente é a expressão de sua inércia, ou seja, a tendência que seu corpo tem de permanecer parado ou em velocidade constante.</p><br>
-        <p>Além disso, quanto maior for a massa de um corpo, maior será sua inércia. Assim, alterar o estado de movimento de um corpo de massa grande requer a aplicação de uma força maior. Corpos de massa pequena têm seu estado de movimento alterado facilmente com a aplicação de forças menos intensas.</p><br>
-        <!-- Link interativo com efeito onMouseOver e onMouseOut -->
-        <center>
-            <a onmouseover="mudar('lampada', 'img/foto5.png')"
-            onmouseout="mudar('lampada', 'img/foto4.png')">
-            <img src="img/foto4.png" id="lampada"></a><br>
-        </center>
-        <!-- Fim da imagem dinamica -->
-        <!-- mais paragrafos explicativos -->
-        <p>A Primeira Lei de Newton é pouco intuitiva: ao rolarmos uma bola no chão, ela para diante de nossos olhos. Jamais esperaríamos que ela rolasse eternamente. No caso descrito, porém, a bola está sujeita a uma força resultante que não é nula: há uma força de atrito entre a bola e a superfície do chão, desacelerando o objeto continuamente.</p><br>
-        <h1>Segunda Lei de Newton</h1><br>
-        <p>A Segunda Lei de Newton, também conhecida como Lei da Superposição de Forças ou como Princípio Fundamental da Dinâmica, traduzida de sua forma original, é apresentada abaixo:</p><br>
-        <p>“A mudança de movimento é proporcional à força motora imprimida e é produzida na direção de linha reta na qual aquela força é aplicada.”</p><br>
-        <p>Essa lei informa que o módulo da aceleração produzida sobre um corpo é diretamente proporcional ao módulo da força aplicada sobre ele e inversamente proporcional à sua massa. Essa lei é apresentada na equação abaixo:</p><br><br>
-        <div class="formula"><!-- Fórmulas e legendas -->
-            <img src="img/foto2.1.jpeg" alt="formula"><br><br>
-            <p>Legenda:</p>
-            <p>|a| – módulo da aceleração (m/s²)</p>
-            <p>|F| - módulo da força (N ou kg.m/s²)</p> 
-            <p>m – massa do corpo (kg)</p>
-        </div><br><br><!-- mais paragrafos explicativos -->
-        <p>As forças são grandezas vetoriais, portanto, são escritas com uma seta apontada sempre para direita acima de seu símbolo. Essa seta não indica o módulo ou a direção da grandeza vetorial, indica somente que elas são vetoriais. De acordo com a Segunda Lei de Newton, a força resultante aplicada sobre um corpo produz nele uma aceleração na mesma direção e sentido da força resultante:</p><br>
-        <div class="formula"><!-- Fórmulas e legendas -->
-            <img src="img/foto3.webp" alt="formula"><br><br>
-            <p>Legenda:</p>
-            <p>Fr – Força resultante (N ou kg.m/s²)</p>
-            <p>m – massa do corpo (kg)</p>
-            <p>a – aceleração (m/s²)</p> 
-        </div>
-        <div class="divimagemdinamica"><!-- Mais imagens interativas -->
-            <a onmouseover="outro('lampada2', 'img/foto7.png')"
-            onmouseout="outro('lampada2', 'img/foto6.png')">
-                <img src="img/foto6.png" id="lampada2"></a><br>
-            <a onmouseover="trocar('lampada3', 'img/foto9.png')"
-            onmouseout="trocar('lampada3', 'img/foto8.png')">
-                <img src="img/foto8.png" id="lampada3"></a><br>
-        </div><!-- mais paragrafos explicativos -->
-        <p>Ao aplicar uma força à um objeto, quanto menor a massa, maior será a aceleração obtida. Aplicando a mesma força ao carrinho vazio e ao carrinho cheio resultará em acelerações visivelmente diferentes.</p><br>
-        <h1>Terceira Lei de Newton</h1><br><!-- mais paragrafos explicativos -->
-        <p>A Terceira Lei de Newton recebe o nome de Lei da Ação e Reação. Essa lei diz que todas as forças surgem aos pares: ao aplicarmos uma força sobre um corpo (ação), recebemos desse corpo a mesma força (reação), com mesmo módulo e na mesma direção, porém com sentido oposto. O enunciado original da Terceira Lei de Newton encontra-se traduzido abaixo:</p><br>
-        <p>“A toda ação há sempre uma reação oposta e de igual intensidade: as ações mútuas de dois corpos um sobre o outro são sempre iguais e dirigidas em sentidos opostos.”</p><br>
-        <p>Essa lei permite-nos entender que, para que surja uma força, é necessário que dois corpos interajam, produzindo forças de ação e reação. Além disso, é impossível que um par de ação e reação forme-se no mesmo corpo.</p><br>
-        <p>Outra informação contida no enunciado da Terceira Lei de Newton indica que os pares de ação e reação têm a mesma intensidade, mesma direção, porém sentidos opostos. Assim, se produzirmos uma força direcionada para baixo sobre um corpo, receberemos dele uma força de reação direcionada para cima. Por exemplo: se estivermos usando patins e empurrarmos um carrinho de supermercado lotado de compras, seremos empurrados para trás, em decorrência da fraca intensidade da força de atrito entre as rodas dos patins e o piso.</p><br>
-        <center><img src="img/foto10.png" alt="foto da teceira lei"></center><br><!-- Mais explicações e imagem da Terceira Lei -->
-        <p>Observe a figura abaixo. Nela temos a força que o corpo 1 faz no corpo 2 (F1,2). Ela é equivalente, em módulo, à força que o corpo 2 faz sobre o corpo 1 (F2,1), no entanto, com sentido contrário. Por isso, adotamos o sinal negativo:</p><br>
-        <div class="divterceiralei"><!-- Mais explicações e imagem da Terceira Lei -->
-            <center><img src="img/foto11.webp" alt="foto da teceira lei"></center><br><br>
-        </div><br>
-        <p>Para acessar as outras páginas, clique aqui:</p><br><!-- Links para outras páginas relacionadas -->
-        <div class="nav">
-            
-            <a href="calculos.html"><img src="img/foto13.png" alt="Exercícios"></a>
-            <a href="calculadora.html"><img src="img/foto12.png" alt="calculadora"></a>
-        </div>
         
-     </main> 
+    </div>
 
-    <aside class="aside2" id="aside2"></aside><!-- Segunda seção à direita da página com um identificador "aside2" e uma classe "aside2" -->
-
-    <footer class="footer"><!-- Rodapé da página -->
-        <div class="sociaisfooter">
-           <ul><!-- Links para redes sociais -->
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li><!-- Links para redes sociais -->
-            </ul> <br><br>
-        </div>
-        <div class="referencias"><!-- referencias e textos -->
-            <h3 class="h3ref">Referências</h3><br>
-            <p>HELERBROCK, Rafael. "Leis de Newton"; Brasil Escola. Disponível em: https://brasilescola.uol.com.br/fisica/leis-newton.htm. Acesso em: 20 de outubro de 2023.</p><br>
-            <p>MACHADO, Letícia Regina. "Leis de Newton"; Mundo Educação. Disponível em: https://exercicios.mundoeducacao.uol.com.br/exercicios-fisica/exercicios-sobre-as-leis-newton.htm. Acesso em: 22 de outubro de 2023.</p><br><br>
-            <h3>Autoras</h3><br><!-- autoras e emails -->
-            <p>Fernanda Barreto Oliveira</p><br>
-            <p>Email: fernanda.berreto.oliveira@escola.pr.gov.br</p><br>
-            <p>Letícia Regina Machado</p><br>
-            <p>Email: leticia.regina.machado@escola.pr.gov.br</p><br><br>
-            <h4>Estudar é como regar as sementes do jardim onde florescerá o seu futuro!</h4><!-- referencias e textos -->
-        </div>
-    </footer>
+    
 </body>
+
 </html>

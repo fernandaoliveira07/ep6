@@ -1,2 +1,2 @@
-# ep6 
-Fernanda Oliveira n°10 e Letícia Machado n°21 2°ADS
+# trabalho-daffara-e-wagner
+trabalho serio bem serio
